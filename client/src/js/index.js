@@ -14,10 +14,18 @@ import Logo from '../images/new-logo.png';
 import Bear from '../images/bear.png';
 import Dog from '../images/dog.png';
 
-import { getDb, initdb, postDb } from "./database";
+import { getDb, initdb, postDb, deleteDb } from "./database";
 import { fetchCards } from "./cards";
 import { toggleForm, clearForm } from "./form"
 
+window.deleteCard = (e) => {
+  // grabs id from the button element attached to the contact card
+  let id = parseInt(e.id);
+  // delete the card
+  deleteDb(id);
+  // reload the DOM
+  fetchCards();
+};
 
 window.addEventListener('load', function () {
   initdb();
