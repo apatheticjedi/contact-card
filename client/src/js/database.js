@@ -62,7 +62,7 @@ export const initdb = async () => {
     console.log('PUT to the database');
 
     // create a connection to the database and version
-    const contactDb = await openDB('contact-db', 1);
+    const contactDb = await openDB('contact_db', 1);
 
     // create a new transaction and specify the store and data privileges
     const tx = contactDb.transaction('contacts', 'readwrite');
