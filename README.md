@@ -12,7 +12,6 @@
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Contributing](#contributing)
-
 7. [Questions](#questions)
 
 ## Description
